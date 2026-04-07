@@ -14,7 +14,7 @@
 
 `name` :
 
-1. el sistema debe validar si el name ya existe , ya que es el atributo relacional , FK de la entidad **usuarios**
+1. el sistema debe validar si el name ya existe , ya que es el atributo relacional , PK de la entidad **usuarios**
 
 `password` :
 
@@ -22,8 +22,8 @@
 
 |ENTIDAD |ATRIBUTO|TYPE|
 |--------|--------|-    |
-|SESSION | usuario_id|int|
-|        |date_inicio    |datetime |
+|SESSION |usuario_id|int (fk)|
+|        |date_inicio  |datetime |
 |        |date_fin    |datetime |
 
 
