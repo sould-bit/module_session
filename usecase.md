@@ -28,7 +28,7 @@ FLUJOS ALTERNATIVOS
 B [sistema] --> vaida datos
 
     |  el usuario ya existe  --> sistema muestra error   [409 : conflic] 
-B [sistema] --> vaida datos
+B [sistema] --> valida datos
     
     | contraseña no cumple requisitos --> sistema muestra error [400 : bad request]
 
@@ -40,7 +40,7 @@ nombre : str (max 50 caract)
 `
 
 `
-password : str (min 20 caract)` 
+password : str (min 8 caract)` 
 
 
 **OUTPUT**
@@ -91,7 +91,7 @@ nombre : str (max 50 caract)
 `
 
 `
-password : str (min 20 caract)` 
+password : str (min 8 caract)` 
 
 
 **OUTPUT**
