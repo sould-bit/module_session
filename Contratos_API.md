@@ -6,7 +6,7 @@
 
    `POST /API/V1/register`
 - **B**  
-    ` GET /API/V1/loguin`
+    ` POST /API/V1/loguin`
 
 
 # PYLOAD *(REQUEST)*

@@ -35,7 +35,7 @@
 **USUARIOS**
 ```` 
 1. no puede existir usuarios duplicados
-2. la contraseña puede tener minimo 8 caracteres
+2. la contraseña puede tener minimo 4 caracteres
 3. la constraseña debe tener caracteres especiales 
 ````
 **SESSION**
