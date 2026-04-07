@@ -43,4 +43,4 @@
 1. un usuario no puede iniciar seccion sin antes registrarse 
 ````
 
-[back to readmi](readmi.md)
+[back to readmi](README.md)
