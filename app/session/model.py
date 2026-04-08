@@ -5,5 +5,5 @@ from sqlmodel import Field, SQLModel
 #entidad session
 class Session(SQLModel, table=True):
     usuario_id: int = Field(foreign_key="user.id")
-    date_inicio : datetime =Field(default= datetime.now())
-    date_fin : datetime = Field(default= datetime.now())
+    date_inicio : datetime =Field(default_factory= datetime.now)
+    date_fin : datetime = Field(default_factory= datetime.now)
