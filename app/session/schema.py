@@ -15,7 +15,9 @@ class SessionCreate_Request(BaseModel):
           3. debe contener caracteres especiales\n
     """
     name: str = Field(..., min_length=4, max_length=50)
-    password: str = Field(..., min_length=8, regex=r'^(?=.*[A-Z])(?=.*[a-z])(?=.*\d)(?=.*[@$!%*?&])[A-Za-z\d@$!%*?&]{8,}$')                  
+    password: str = Field(..., min_length=8)
+
+    
 
 # response
 
@@ -27,6 +29,6 @@ class SessionCreate_Response(BaseModel):
           2. message (str) mensaje de respuesta,\n
           3. usuario_id (int) id del usuario registrado,\n
     """
-    status: int = Field(..., ge=200, le=299)
+    status: int = Field(..., ge=200, le=409)        
     message: str = Field(..., min_length=4, max_length=50)
-    usuario_id: int = Field(..., ge=1)
+    usuario_id: Optional[int] = Field(default=None)
